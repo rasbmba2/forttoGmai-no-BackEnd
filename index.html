@@ -9,6 +9,7 @@
     <title>Form With out backend</title>
 </head>
 <body>
+    <!---
 <div class="container">
     <form onsubmit="sendEmail();reset(); return false;">
         <h3>Fill The Form</h3>
@@ -19,8 +20,23 @@
         <button type="submit">SEND</button>
     </form>
 
-</div>
 
+</div>
+---->
+
+<!--Using https://formsubmit.co/ -->
+<div class="container">
+    <form action="https://formsubmit.co/el/confirm/4be1886d11be2bd6fe47b50879c65fd0" method="POST">
+        <h3>Fill The Form</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone no." required>
+        <textarea id="message" rows="4" placeholder="How can we help You?"></textarea>
+        <button type="submit">SEND</button>
+    </form>
+
+
+</div>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="index.js"></script>
 </body>
